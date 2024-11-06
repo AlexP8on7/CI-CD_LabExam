@@ -18,7 +18,7 @@ public class ErrorHandler {
             String err_message = error.getDefaultMessage();
             errorList.put(err_name, err_message);
         }
-        return ResponseEntity.statust(400).body(errorList);
+        return ResponseEntity.status(400).body(errorList);
     }
 
 }

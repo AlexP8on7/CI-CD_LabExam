@@ -15,7 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Employee {
-    @Pattern()
+    @Pattern(regexp = "[EMP] [0-9]")
     private String employeeCode;
     @NotBlank(message="Please Enter Name")
     private String name;
@@ -24,7 +24,7 @@ public class Employee {
     @NotBlank(message = "Please Enter Position")
     private String position;
     @Positive(message = "Salary Must Be Positive")
-    private long salay;
+    private long salary;
     @DateTimeFormat()
     private long date;
 
